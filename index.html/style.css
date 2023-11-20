@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Black+Ops+One&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Mr+Dafoe&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&family=Saira:wght@700&family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.logo h2 {
+    font-family: Mr Dafoe ;
+    font-size: 85px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 0px;
+    
+}
+
+.logo h2::first-letter {
+    color: #02f7de;
+   
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin: 80;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.btn a {
+    display: inline-block;
+    color: #fff;
+    background:  #009688;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.8;
+    width: 150px;
+    font-size: 16px;
+    font-weight: uppercase;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    margin: 0 10px ;
+    text-decoration: none;
+}
+
+.btn a:hover{
+     background: transparent;
+     border: 1px solid #009688;
+     color: #009688;
+     transform: translateX(8px);
+}
+
+.btn a.ctaa {
+    background: transparent;
+    border: 1px solid  #009688;
+    color:  #009688;
+}
+
+.btn a.ctaa:hover {
+    background:  #009688;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .navbar .bx-search {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    top: 47px;
+    left: 134vh;
+    background: transparent;
+    color: #fff;
+    border-radius: 50%;
+    transition: all .55s ease;
+}
+
+.navbar .bx-search:hover {
+    background-color: #00b390
+}
+
+.input::before {
+    content: '';
+    position: absolute;
+    height: 21px;
+    width: 1px;
+    background-color: #fff;
+    right: 23em;
+    top: 60px;
+} */
+
+
+#menu-icon {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    left: 92%;
+    top: 7vh;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+.title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 5px;
+    font-size: 40px;
+    color: #02f7de;
+    padding: 10px;
+    box-shadow: 3px 4px 20px 3px rgba(1 1 1 / 15% );
+    position: relative;
+   
+}
+
+.title h1::before {
+    content: '';
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    background-color: #fff;
+    bottom: -2vh;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+section {
+    background-color: #eee;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* top right bottom left*/
+    padding: 20px 0 20px 0;
+}
+
+.card {   
+    background-color: #fff;
+    width: 18.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15% );
+    border-radius: 25px;
+    padding: 20px -10px;
+    margin: 15px;
+    transition: 0.4s ease; 
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icons span {
+    color:#02f7de;
+    font-size: 8em;
+    text-align: center;
+    margin-left: 27%;
+}
+
+.icons i {
+    color:#02f7de;
+    font-size: 8em;
+    text-align: center;
+    margin-left: 27%;
+}
+
+.icons h3 {
+    color: #02f7de;
+   text-align: center;
+    font-size: 20px;
+    padding: 4px 0px 18px 0px;
+}
+
+.icons p {
+    margin: 0px 20px;
+    text-align: center;
+    padding: 4px 0px 18px 0px;
+}
+
+.icons a {
+    position: relative;
+    left: 20vh;
+    text-decoration: none;
+}
+
+.card-a {
+    font-size: 10px;
+    text-align: center;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* top right bottom left*/
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 5px solid #fff;
+    min-height: 12em;
+    min-width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    box-shadow: 0 5px 25px rgb(39 38 38 / 68%);
+    border-radius: 25px;
+    padding: 20px -10px;
+    margin: 10px auto 20px;
+    transition: all .55s ease;
+}
+
+
+.stars i{
+    color: orange;
+    position: relative;
+    left: 6vh;
+    top: 3px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image img{
+    width: 100%;
+    height: 49vh;
+    border-radius: 21px;
+    display: flex;
+    justify-content: center;
+    padding: 1px 0px;
+}
+
+.project-image img:hover {
+    opacity: .9;
+}
+
+.project-category {
+    text-align: center;
+    padding: 2px;
+}
+
+.checked {
+    color: orange;
+}
+
+.p-star {
+    position: relative;
+    left: 25vh;
+    bottom: 4vh;
+}
+.author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* top right bottom left*/
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    margin: 0vh 14vh;
+}
+.author-img {
+    display: flex;
+    border-bottom: 1px solid #dadde1;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.author-img img{
+    width: 23vh;
+    height: 23vh;
+    border-radius: 50%;
+    border: 3px solid #dadde1;
+    margin: 30px;
+    position: relative;
+    
+    transition: all .55s ease;
+}
+
+.author-card {
+    background-color: #fff;
+    border: 5px solid #fff;
+    min-height: 12em;
+    min-width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    
+    border-radius: 10px;
+    padding: 20px -10px;
+    margin: 10px auto 20px;
+    transition: all .55s ease;
+    border: 2px solid #dadde1;
+    transition: all .35s ease;
+}
+
+.author-card:hover {
+    border: 2px solid #02f7de;
+    transform: translateY(-8px);
+   box-shadow:  0px 13px 10px rgb(39 38 38 / 68%);
+    
+}
+
+.author-name {
+    font-family: Vazirmatn;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 45px;
+    text-align: center;
+}
+
+.author-book a {
+    font-family: Vazirmatn;
+    color: #00b390;
+    position: relative;
+    left: 12vh;
+    bottom: 2vh;
+    text-decoration: none;
+}
+
+.author-book span {
+    color: #00b390;
+    position: relative;
+    left: 12vh;
+    bottom: 1vh;
+    text-decoration: none;
+}
+
+footer {
+    background: #202c2c;
+    height: 25vh;
+}
+
+.footer-icons i{
+    color: #fff;
+    margin: 0 7px 0 7px;
+    position: relative;
+    top: -9vh;
+    left: 7vh;
+    font-size: 30px;
+    transition: all .50s ease;
+}
+
+.footer-icons i:hover {
+    color: #02f7de;
+    transform: translateY(-5px);
+}
+
+footer .logo2 a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    right: 10vh;
+    /* top right bottom left*/
+    padding: 0px 30px 0px 0;
+    font-family: Mr Dafoe;
+    font-size: 85px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 0px;
+    text-decoration: none;
+
+}
+
+.logo2 a span {
+    color: #02f7de;
+    font-family: Mr Dafoe;
+    font-size: 85px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1600px) {
+.project-card{
+    margin: 17px;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    #menu-icon {
+        display: block;
+        margin-left: -4vh;
+    }
+    
+    .navbar {
+        background: #202c2c;
+        position: fixed;
+        width: 100%;
+        height: 16vh;
+        z-index: 10;
+    }
+    .navbar ul li a {
+        position: relative;
+        top: -7vh;
+    }
+    .navbar ul li {
+        padding: 20px 0px;
+    }
+    .navbar ul li a:hover {
+        color: #02f7de;
+    }
+    .navlist {
+        display: flex;
+        position: absolute;
+        top: 99%;
+        right: -100%;
+        width: 155px;
+        height: 59Vh;
+        background: #202c2c;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 0px;
+        z-index: 2;
+        transition: all .55s ease;
+        border-radius: 18px 0px 0px 18px;
+        transition: all .55s ease;
+        }
+        .navlist a {
+            
+            border-bottom: 2px solid transparent;
+            transition: all .55s ease;
+        }
+        .navlist a:hover {
+            border-bottom: 2px solid #02f7de;
+        }
+    
+    .navbar ul li::after{
+       display: none;
+    }
+    .navlist.open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    /* .input {
+        display: none;
+    } */
+
+    
+
+    /* .project-card {
+        min-height: 14em;
+        width: 15em;
+    } */
+
+   
+      
+}
+
+
+
+@media screen and (max-width: 681px) {
+   header {
+        padding: 0 0%;
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+    .logo2 {
+        position: relative;
+       top: 64px;
+       justify-content: center;
+    }
+    footer {
+        height: 29vh;
+    }
+    .footer-icons i {
+       
+        top: -13vh;
+    }
+}
+
+
+@media (max-width: 361px)  {
+   
+    .btn a.ctaa {
+        margin: 19px 0px;
+        width: 90%;
+      
+    }
+    .btn a.taa {
+        width: 90%;
+       
+    }
+}
+
+@media screen and (max-width: 681px) {
+     .logo h2 {
+         font-size: 63px;
+     }
+     
+ }
