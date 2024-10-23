@@ -136,37 +136,6 @@ header {
     justify-content: space-between;
 }
 
-/* .navbar .bx-search {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    top: 47px;
-    left: 134vh;
-    background: transparent;
-    color: #fff;
-    border-radius: 50%;
-    transition: all .55s ease;
-}
-
-.navbar .bx-search:hover {
-    background-color: #00b390
-}
-
-.input::before {
-    content: '';
-    position: absolute;
-    height: 21px;
-    width: 1px;
-    background-color: #fff;
-    right: 23em;
-    top: 60px;
-} */
-
-
 #menu-icon {
     display: none;
     position: absolute;
@@ -223,7 +192,7 @@ section {
     background-color: #fff;
     width: 18.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15% );
-    border-radius: 25px;
+    border-radius: 11px;
     padding: 20px -10px;
     margin: 10px;
     transition: 0.4s ease; 
